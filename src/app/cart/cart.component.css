@@ -1,0 +1,9 @@
+.card{
+    align-items: center;
+    margin:25px;
+    padding:25px;
+}
+button{
+    margin: 5px;
+    width:fit-content
+}

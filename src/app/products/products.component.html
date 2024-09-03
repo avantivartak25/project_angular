@@ -1,0 +1,14 @@
+<div class="container">
+    <br>
+    <div class="row">
+        <ng-container *ngFor="let item of productList">
+        <div class="card col-md-3">
+            <img src="{{item.image}}">
+            <h5 style="white-space: nowrap; overflow: hidden; text-overflow: ellipse; max-width: 100ch;">{{item.pname}}</h5>
+            <p style="white-space: wrap; overflow: hidden; text-overflow: ellipse; max-width: 100ch;">{{item.desc}}</p>
+            <p><strong> Price:{{item.price| currency:'INR':'symbol':'3.0'}}</strong> | <s>MRP:{{item.mrp |currency:'INR':'symbol':'3.0'}}</s></p>
+            <button class="btn btn-dark"(click)="addtocart(item)">Add to cart</button>
+        </div>
+    </ng-container>
+    </div>
+</div>

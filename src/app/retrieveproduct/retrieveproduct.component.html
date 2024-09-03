@@ -1,0 +1,26 @@
+<div class="container">
+    <hr><br><br>
+    <h1>Product list
+    <button id="addprod" routerLink="/createproduct" class="btn btn-success">Add new product</button></h1>
+  <table align="center" border="2" class="table table-bordered ">
+      <tr>
+        <th>ID</th>
+        <th>Product Name </th>
+        <th>Price(in Rupees)</th>
+        <th>MRP</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+      <tr *ngFor="let p1 of productdata">
+        <td>{{p1.id}}</td>
+        <td>{{p1.pname}}</td>
+        <td>{{p1.price}}</td>
+        <td>{{p1.mrp}}</td>
+        <td><Button class="btn btn-primary" (click)="editProduct(p1.id)">Update</Button></td>
+        <td><button class="btn btn-danger" (click)="deleteProd(p1.id)" >Delete</button></td>
+      </tr>
+    </table>
+    <br>
+  </div>
+  
+  

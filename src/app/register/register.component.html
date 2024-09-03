@@ -1,0 +1,130 @@
+<div class="register1">
+<br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <img [src]="img" height="950" width="600" >  
+            </div>
+            <div class="col-md-5">
+    <h2 class="login-title" align="center">Create Account</h2>
+    <h5>
+        <form #registerform = "ngForm" (ngSubmit)="register(registerform)">
+                <div class="form-field">
+                    Name<br>
+                    <input type="text" id="cname1" name="cname1" required ngModel #cname1="ngModel" minlength="2" maxlength="15" pattern="[a-z A-Z]*">
+                    <div *ngIf="cname1.touched && !cname1.valid">
+                        <span *ngIf="cname1.errors?.['required']">
+                            Name field should not be blank
+                        </span>
+                        <span *ngIf="cname1.errors?.['minlength']">
+                            Name field should have minimum 2 alphabets 
+                        </span>
+                        <span *ngIf="cname1.errors?.['pattern']">
+                            Digits or special characters are not allowed 
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="form-field">
+                    Phone Number<br>
+                    <input type="text" id="phone1" name="phone" ngModel required #phone1="ngModel" minlength="10"  maxlength="10" pattern="[0-9]*">
+                    <div *ngIf="phone1.touched && !phone1.valid">
+                        <span *ngIf="phone1.errors?.['required']">
+                            Phone number should not be blank
+                        </span>
+                        <span *ngIf="phone1.errors?.['minlength']">
+                            Phone number should be 10 digits
+                        </span>
+                        <span *ngIf="phone1.errors?.['pattern']">
+                            Symbols or alphabets not allowed
+                        </span>
+                    </div>
+                </div>
+                <div class="form-field">
+                    Email Id<br>
+                    <input type="email" id="email1" ngModel name="email" required #email1="ngModel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                    <div *ngIf="email1.touched && !email1.valid">
+                        <span *ngIf="email1.errors?.['required']">
+                            Email id should not be blank
+                        </span>
+                        <span *ngIf="email1.errors?.['pattern']">
+                            Valid email id required
+                        </span>
+                        </div>
+                </div>
+                <div class="form-group">
+                    Gender : 
+                    <input type ="radio" id="gender" name="gender" value="male" ngModel> Male 
+                    <input type ="radio" id="gender" name="gender" value="female" ngModel> Female 
+                </div>
+                <br>
+                
+                <div class="form-field">
+                    Address<br>
+                    <input type="text" name="add" id="add1" required ngModel #add1="ngModel">
+                    <div *ngIf="add1.touched">
+                        <span *ngIf="add1.errors?.['required']">
+                            Address should not be blank
+                        </span>
+                </div>
+                </div>
+
+                <!--div class="form-group">City
+                <select id="city" name="city" NgModel>
+                    <option *ngFor ="let c of cities">{{c}}</option>
+                </select>
+                </div>
+                <br>
+                <div class="form-field">State
+                    <select id="state" name="state" NgModel>
+                        <option *ngFor ="let s of states" name="state">{{s}}</option>
+                    </select>
+                </div><br-->
+                <div class="form-field">
+                    PinCode<br>
+                    <input type="text" id="pin1" name="pin" required ngModel #pin1="ngModel" pattern="[0-9]*" maxlength="6" minlength="6">
+                    <div *ngIf="pin1.touched && !pin1.valid">
+                        <span *ngIf="pin1.errors?.['required']">
+                            Pincode should not be blank
+                        </span>
+                        <span *ngIf="pin1.errors?.['pattern']">
+                            Alphabets not allowed
+                        </span>
+                        <span *ngIf="pin1.errors?.['minlength']">
+                            Enter 6 digit pincode
+                        </span>
+                    </div>
+                </div>
+                <div class="form-field">
+                    Username<br>
+                    <input type="text" id="uname1" name="uname" required ngModel #uname="ngModel">
+                    <div *ngIf="uname.touched">
+                        <span *ngIf="uname.errors?.['required']">
+                            Username is required
+                        </span>
+                    </div>
+                </div>
+                <div class="form-field">
+                    Password<br>
+                    <input type="password" id="pass1" name="pass" required ngModel minlength="8" #pass1="ngModel" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$">
+                    <div *ngIf="pass1.touched && !pass1.valid">
+                        <span *ngIf="pass1.errors?.['required']">
+                            Password is required
+                        </span>
+                        <span *ngIf="pass1.errors?.['minlength']">
+                            Password should be atleast 8 characters. 
+                        </span>
+                        <span *ngIf="pass1.errors?.['pattern']">
+                            Password should contain at least 1 uppercase letter, 1 lowercase letter, 1 number and 1 symbol. 
+                        </span>
+                    </div>
+                </div>
+               <button class="btn btn-primary" type="submit" id="reg_submit" [disabled]="registerform.invalid"><strong>Submit</strong></button>
+        </form>
+    </h5>   
+
+
+</div></div></div>
+</div>
+<br>

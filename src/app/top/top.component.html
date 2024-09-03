@@ -1,0 +1,40 @@
+<header>
+    <div class="fixed-top" >
+         <div id="top1">
+          <strong>Balcony Breeze </strong> <i style="font-size:x-large" class="fas fa-leaf"></i> 
+          <h6> One stop solution for your balcony decor</h6>
+         </div> 
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+          <div class="container-fluid">	    
+
+              <ul class="navbar-nav me-auto order-0 ">
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/products">Home</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/aboutus">About us</a></li>    
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/contactus">Contact us</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/register">Register </a></li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/login">Login</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/login" [queryParams]="{logout : true}" >Logout</a></li> 
+              </ul>
+              <div class="d-flex ms-auto order-5">
+                <button class="btn btn-light"><strong>Cart</strong>
+                    <i style="font-size:xx-large;" routerLink="/cart" class="fas fa-cart-plus"></i>
+                    <div style="font-size: 10px;" class="badge bg-dark">{{totalitem}}</div>
+                </button>
+              </div>
+          </div>
+        </nav>
+    </div>
+</header>
+<br><br>
+
+
+<br><br>
+
+
+

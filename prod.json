@@ -1,0 +1,109 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "pname": "Dream Catcher",
+      "price": "189",
+      "mrp": "499",
+      "desc": "Handmade Dreamcatcher for Bedroom, Balcony, Garden, Party, Cafe, Small Ring Beaded Blue & Light Blue Feathers, 17cm Diameter, Length 80cm",
+      "image": "../../assets/images/img1.jpg"
+    },
+    {
+      "id": "2",
+      "pname": "Wooden Railing Table",
+      "price": "2549",
+      "mrp": "5999",
+      "desc": "Furnelift Wooden Railing Table for Balcony - Sheesham Wood Hanging Table for Garden - Bar Counter Stand for Outdoor Shelf (Rectangle, Teak Finish)  ",
+      "image": "../../assets/images/img2.jpg"
+    },
+    {
+      "id": "4",
+      "pname": "Plant Stand",
+      "mrp": "3999",
+      "price": "1699",
+      "desc": "Kundi Floor Mount 3 Tier Plant Stand Floral Corner Shelf Metal Flower Pot Rack Stair-Step Style Display Ladder For Garden Balcony Indoor Outdoor (Black)",
+      "image": "../../assets/images/img4.jpg"
+    },
+    {
+      "id": "5",
+      "pname": "Firefly Solar Lights",
+      "mrp": "999",
+      "price": "349",
+      "desc": "8 LED | Starburst Swaying Solar Garden Light, Warm Garden Light | Outdoor Decoration | Waterproof | Path Lights for Pots, Balcony, Pathway (1) Plastic, Yellow",
+      "image": "../../assets/images/img5.jpg"
+    },
+    {
+      "id": "6",
+      "pname": "Artificial Hanging Leaves",
+      "mrp": "799",
+      "price": "249",
+      "desc": " Greenery Vine Creeper Plants for Home Decor Main Door Wall Balcony Office Decoration Party Festival Craft (8 Feet) (Set of 6)",
+      "image": "../../assets/images/img6.jpg"
+    },
+    {
+      "id": "7",
+      "pname": "Jute swing chair",
+      "price": "1499",
+      "mrp": "2999",
+      "desc": "Jute Handmade Regular Indoor & Outdoor & Living Room D Shape Hanging Swing Chair | Jhula with One Cushion | 1 Iron S Hook | 3M Nylon Rope",
+      "image": "../../assets/images/img7.jpg"
+    }
+  ],
+  "customers": [
+    {
+      "id": "101",
+      "cname": "Prerana Sharma",
+      "phone": 9874561230,
+      "uname": "ps",
+      "email": "prerana@gmail.com",
+      "pass": "p123",
+      "add": "Jogeshwari",
+      "state": "MH",
+      "pin": 400060
+    },
+    {
+      "id": "102",
+      "cname": "Neha Rao",
+      "phone": 8525820147,
+      "uname": "nr",
+      "email": "neha@gmail.com",
+      "pass": "p123",
+      "add": "Mulund",
+      "state": "MH",
+      "pin": 400080
+    },
+    {
+      "id": "103",
+      "cname": "Nita Naik",
+      "phone": 9874561230,
+      "uname": "nn",
+      "email": "nita@gmail.com",
+      "pass": "p123",
+      "add": "Jogeshwari",
+      "state": "MH",
+      "pin": 400060
+    },
+    {
+      "id": "104",
+      "cname": "Soham Desai",
+      "phone": 9874561230,
+      "uname": "sd",
+      "email": "soham@gmail.com",
+      "pass": "p123",
+      "add": "Jogeshwari",
+      "state": "MH",
+      "pin": 400060
+    },
+    {
+      "id": "f571",
+      "cname1": "Avanti Vartak",
+      "phone": "09623849568",
+      "email": "avantivartak256@gmail.com",
+      "gender": "female",
+      "add": "Chandramani, Near Vaje Hospital,",
+      "pin": "402201",
+      "uname": "vm",
+      "pass": "pass1234"
+    }
+  ]
+}

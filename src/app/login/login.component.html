@@ -1,0 +1,27 @@
+<div class="login1">
+<br><br><br>
+            <div class="container" >
+                <div class="row">
+                    <div class="col-md-7">
+                        <img [src]="img" height="500" width="700" >
+                    </div>
+                    
+                    <div class="col-md-5">
+                                           <h2 class="login-title" align="center">Customer Login</h2>
+                                          <form >
+                                            <div class="form-group">
+                                                <input type="text" name="username"[(ngModel)]="usname" class="form-control" placeholder="Username" required><br>
+                                                <input type="password" name="password" [(ngModel)]="passwd" class="form-control" placeholder="Password" required>
+                                            <br>
+                                            </div>
+                                            <div align="center">
+                                                <button (click)="loginUser()" class="btn btn-warning"><b>Login</b></button>  
+                                            </div>
+                                            <h5>New user? <a routerLink="/register">Register here </a></h5><br>
+                    <h6><a routerLink="/stafflogin">Staff login</a></h6>
+                                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+<br>

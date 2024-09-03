@@ -1,0 +1,80 @@
+<br>
+<div class="container">
+    <br><br>
+    <div class="row">
+        <div class="col-md-6">
+   
+    <h2>Enter Product Details</h2>
+    <h6>
+        <form #registerprod = "ngForm" (ngSubmit)="register(registerprod)">
+            <div class="form-field1">
+                <label for="id">Product ID</label><br>
+                <input type="text" id="id" name="id" required ngModel #id="ngModel" ><br>
+                <div *ngIf="id.touched && !id.valid">
+                    <span *ngIf="id.errors?.['required']">
+                        Please enter product id. 
+                    </span>
+                </div>
+            </div><br>
+            <div class="form-field">
+                <label for="pname">Product Name</label><br>
+                <input type="text" id="pname" name="pname" required ngModel #pname="ngModel"><br>
+                <div *ngIf="pname.touched && !pname.valid">
+                    <span *ngIf="pname.errors?.['required']">
+                        Please enter product name.
+                    </span>
+                </div>
+            </div><br>
+
+            <div class="form-field">
+                <label for="price">Price</label><br>
+                <input type="text" id="price" name="price" required ngModel #price="ngModel" pattern="[0-9]*" ><br>
+                <div *ngIf="price.touched && !price.valid">
+                    <span *ngIf="price.errors?.['required']">
+                        Please enter product price.
+                    </span>
+                    <span *ngIf="price.errors?.['pattern']">
+                        Alphabets not allowed.
+                    </span>
+                </div>
+            </div><br>
+
+            <div class="form-field">
+                <label for="mrp">MRP</label><br>
+                <input type="text" id="mrp" name="mrp" required ngModel #mrp="ngModel" pattern="[0-9]*" >
+                <div *ngIf="mrp.touched && !mrp.valid">
+                    <span *ngIf="mrp.errors?.['required']">
+                        Please enter MRP.
+                    </span>
+                    <span *ngIf="mrp.errors?.['pattern']">
+                        Alphabets not allowed.
+                    </span>
+                </div>
+            </div>
+            
+            <div class="form-field"><br>
+                <label for="desc">Product Description</label><br>
+                <textarea id="desc" rows="3" cols="20"  name="desc" required ngModel #desc="ngModel"></textarea>
+                <div *ngIf="desc.touched && !desc.valid">
+                    <span *ngIf="desc.errors?.['required']">
+                        Please enter product description.
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-field"><br>
+                <label for="image">Product Image url</label><br>
+                <input type="text" id="img" name="image" required ngModel #image="ngModel" >
+                <div *ngIf="image.touched && !image.valid">
+                    <span *ngIf="image.errors?.['required']">
+                        Please enter image url.
+                    </span>
+                </div>
+            </div><br>
+            <button class="btn btn-primary" type="submit" id="reg_submit" [disabled]="registerprod.invalid"><strong>Submit</strong></button>
+        </form></h6>  
+    </div>
+    <div class="col-md-4">
+        <img [src]="img" height="600" width="800" >   
+</div>
+</div>

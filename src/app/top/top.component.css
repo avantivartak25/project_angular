@@ -1,0 +1,13 @@
+#top1{
+    width: 100%;
+    background-color: green;
+    color:white;
+    text-align: center;
+    font-size: xx-large;
+    font-family:cursive;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
